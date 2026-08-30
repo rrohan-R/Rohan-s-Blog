@@ -1,0 +1,15 @@
+.page {
+  padding: 64px 24px 96px;
+}
+
+.page__title {
+  font-size: clamp(1.9rem, 3.6vw, 2.6rem);
+  margin-bottom: 16px;
+}
+
+.page__lede {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  max-width: 64ch;
+  margin-bottom: 44px;
+}

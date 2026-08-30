@@ -1,0 +1,49 @@
+.bcard {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+}
+.bcard:hover {
+  border-color: var(--accent);
+}
+
+.bcard__cat {
+  align-self: flex-start;
+  color: var(--accent);
+  border-color: var(--accent-soft);
+  background: var(--accent-soft);
+}
+
+.bcard__title {
+  font-size: 1.12rem;
+  line-height: 1.35;
+}
+.bcard__title a:hover {
+  color: var(--accent);
+}
+
+.bcard__excerpt {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  flex: 1;
+}
+
+.bcard__meta {
+  display: flex;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--text-faint);
+}
+
+.bcard__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: var(--accent);
+  margin-top: 4px;
+}

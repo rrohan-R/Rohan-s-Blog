@@ -1,0 +1,139 @@
+.bpost__grid {
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 48px;
+  margin-top: 8px;
+}
+
+.bpost__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.7rem, 3.4vw, 2.4rem);
+  margin: 16px 0 10px;
+}
+
+.bpost__subtitle {
+  color: var(--text-muted);
+  font-size: 1.08rem;
+  margin-bottom: 18px;
+}
+
+.bpost__meta {
+  display: flex;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--text-faint);
+  margin-bottom: 18px;
+}
+
+.bpost__tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.bpost__share {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-size: 0.86rem;
+  color: var(--text-faint);
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--border);
+}
+.bpost__share a {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.bpost__nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 48px;
+  padding-top: 28px;
+  border-top: 1px solid var(--border);
+}
+
+.bpost__navlink {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 45%;
+  color: var(--text);
+}
+.bpost__navlink--right {
+  text-align: right;
+  align-items: flex-end;
+}
+.bpost__navlink:hover {
+  color: var(--accent);
+}
+.bpost__navlabel {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--text-faint);
+}
+
+.bpost__side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: fit-content;
+  position: sticky;
+  top: 90px;
+}
+
+.bpost__toc, .bpost__related {
+  padding: 20px;
+}
+.bpost__toc h4, .bpost__related h4 {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--accent);
+  margin-bottom: 14px;
+}
+.bpost__toc nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.bpost__toc nav a {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+.bpost__toc nav a:hover {
+  color: var(--accent);
+}
+
+.bpost__related-item {
+  display: block;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  padding: 8px 0;
+  border-top: 1px solid var(--border);
+}
+.bpost__related-item:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+.bpost__related-item:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 900px) {
+  .bpost__grid {
+    grid-template-columns: 1fr;
+  }
+  .bpost__side {
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .bpost__toc, .bpost__related {
+    flex: 1;
+    min-width: 240px;
+  }
+}

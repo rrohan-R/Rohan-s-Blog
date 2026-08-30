@@ -1,0 +1,131 @@
+.contact__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 48px;
+}
+
+.contact__interests {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.contact__interest {
+  padding: 6px 12px;
+}
+
+.contact__links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact__linkcard {
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--text);
+}
+.contact__linkcard:hover {
+  border-color: var(--accent);
+}
+.contact__linkcard div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.contact__linkcard strong {
+  font-size: 0.92rem;
+}
+.contact__linkcard span {
+  font-size: 0.82rem;
+  color: var(--text-faint);
+  font-family: var(--font-mono);
+}
+
+.contact__form {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.contact__field input,
+.contact__field textarea {
+  font-family: var(--font-body);
+  font-size: 0.96rem;
+  padding: 11px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  resize: vertical;
+  font-weight: 400;
+}
+.contact__field input:focus,
+.contact__field textarea:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.contact__error {
+  color: #e5484d;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.contact__submit {
+  justify-content: center;
+  margin-top: 6px;
+}
+.contact__submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.contact__success {
+  max-width: 480px;
+  margin: 40px auto 0;
+  padding: 48px 36px;
+  text-align: center;
+}
+
+.contact__success-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--teal-soft);
+  color: var(--teal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin: 0 auto 18px;
+}
+
+.contact__success h2 {
+  margin-bottom: 10px;
+}
+
+.contact__success p {
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+@media (max-width: 860px) {
+  .contact__grid {
+    grid-template-columns: 1fr;
+  }
+}

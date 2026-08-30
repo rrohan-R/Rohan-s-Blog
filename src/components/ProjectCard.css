@@ -1,0 +1,48 @@
+.pcard {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  height: 100%;
+}
+.pcard:hover {
+  border-color: var(--accent);
+}
+
+.pcard__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pcard__title {
+  font-size: 1.2rem;
+}
+.pcard__title a:hover {
+  color: var(--accent);
+}
+
+.pcard__desc {
+  color: var(--text-muted);
+  font-size: 0.94rem;
+  flex: 1;
+}
+
+.pcard__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.pcard__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+
+.pcard__btn {
+  padding: 8px 14px;
+  font-size: 0.84rem;
+}

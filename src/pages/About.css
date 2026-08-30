@@ -1,0 +1,87 @@
+.about__grid {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  gap: 48px;
+  margin-top: 36px;
+}
+
+.about__prose p {
+  color: var(--text);
+  font-size: 1.04rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.about__subhead {
+  margin-top: 32px;
+  margin-bottom: 14px;
+  font-size: 1.1rem;
+}
+
+.about__list {
+  padding-left: 20px;
+  color: var(--text-muted);
+  line-height: 1.9;
+}
+
+.about__card {
+  padding: 24px;
+  height: fit-content;
+  position: sticky;
+  top: 90px;
+}
+
+.about__card-title {
+  font-size: 1rem;
+  margin-bottom: 18px;
+  font-family: var(--font-mono);
+  color: var(--accent);
+}
+
+.about__edu {
+  padding: 14px 0;
+  border-top: 1px solid var(--border);
+}
+.about__edu:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.about__edu-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+
+.about__edu-degree {
+  font-weight: 600;
+}
+
+.about__edu-duration {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--text-faint);
+  white-space: nowrap;
+}
+
+.about__edu-school {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
+
+.about__edu-detail {
+  font-size: 0.82rem;
+  color: var(--text-faint);
+  margin-top: 2px;
+}
+
+@media (max-width: 860px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+  }
+  .about__card {
+    position: static;
+  }
+}
