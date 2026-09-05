@@ -7,7 +7,7 @@ export const profile = {
   github: "https://www.github.com/rrohan-R",
   githubHandle: "rrohan-R",
   linkedin: "https://www.linkedin.com/in/rohan-r007",
-  resumeFile: "/Rohan_Ramesh_Resume.pdf",
+  resumeFile: "/Rohan-R_Resume.pdf",
   photo: "/DP.jpg",
   tagline:
     "I build and ship full-stack applications, with a growing focus on agentic AI.",
