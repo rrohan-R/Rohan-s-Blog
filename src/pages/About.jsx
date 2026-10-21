@@ -20,16 +20,16 @@ export default function About() {
           <p>
             Most of what I do lives at the intersection of the backend and the data it depends on: designing
             REST APIs in Spring Boot, shaping PostgreSQL schemas, and making sure the queries behind them stay
-            fast as data grows. I pair that with React (and, at work, Vaadin) for the interfaces that sit on top.
+            fast as data grows. I pair that with React (and, at work, Vaadin) for the interfaces that sit on top. 
+            I also use various AI tools and frameworks to automate most of my works.
           </p>
           <p>
-            Outside of feature work, I spend time on deployment and reliability — containerizing services with
+            Outside of feature work, I spend time on vibe coding by experimenting with generative AI frameworks and workflows, handling it's deployment and reliability, containerizing services with
             Docker, running them on Vercel, Render etc..., — and on testing, since a feature
             isn't really done until it's verified.
           </p>
           <p>
-            More recently I've been building with LangChain — FindYourMovie uses an LCEL pipeline and Google
-            Gemini to turn a few filters into real movie recommendations — and I'm now exploring LangGraph to
+            More recently I've been building with LangChain and creating RAG workflows and I'm now exploring LangGraph to
             take that from a single model call toward something closer to an agent. I use tools like Claude
             Code as part of that workflow.
           </p>

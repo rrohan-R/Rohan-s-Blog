@@ -4,6 +4,47 @@
 
 export const projects = [
   {
+    slug: "myai",
+    name: "MyAI",
+    short:
+      "A document-chat web app that uses Google Gemini and retrieval-augmented generation to answer questions from your files with cited sources.",
+    problem:
+      "Finding an answer inside long PDFs and reports means searching manually and reading pages of text. General chatbots don't know what's in your files, and they can make up answers without saying where they came from.",
+    solution:
+      "Upload one or more documents and MyAI splits each one into overlapping chunks, then turns each chunk into a vector with Gemini's embedding model. When you ask a question, the FastAPI backend embeds it, finds the closest chunks by cosine similarity, and sends only those excerpts to a Gemini model. The model answers from them and cites its sources as [1], [2] and so on. The answer streams token by token into the React interface, and each citation expands to show the exact excerpt and page it came from. If the documents don't contain the answer, the model says so plainly.",
+    features: [
+      "Upload multiple documents at once by drag and drop or file picker, with a 10 MB per-document limit checked in both the browser and server",
+      "Supports PDF, DOCX, TXT, MD, CSV, JSON and LOG files; invalid, empty or oversized files are reported without blocking other uploads",
+      "Splits documents into overlapping chunks and preserves PDF page numbers so citations can point to a page",
+      "Uses Gemini embeddings for retrieval with separate embedding modes for documents and questions, and Gemini to write the final answer",
+      "Streams answers live, with a Stop button to cancel a reply and a New chat button to reset the conversation",
+      "Inline citations expand to show source excerpts and match scores",
+      "Supports follow-up questions by combining the previous question with the new one during retrieval",
+      "Knowledge base controls let you exclude a document from answers, delete one document, or clear everything",
+      "Safely renders Markdown formatting in replies, including lists and code blocks",
+      "Retries with backoff when Gemini's free quota returns a rate-limit error",
+    ],
+    tech: [
+      "Python",
+      "FastAPI",
+      "Google Gemini",
+      "RAG",
+      "React",
+      "TypeScript",
+      "Vite",
+      "NumPy",
+    ],
+    github: "https://github.com/rrohan-R/MyAI---RAG",
+    live: "https://my-ai-rag-chat-bot.vercel.app",
+    status: "live",
+    platform: [
+      { label: "Frontend", value: "React (Vercel)" },
+      { label: "Backend", value: "FastAPI (Render)" },
+    ],
+    liveNote:
+      "The free hosting tier has no permanent backend disk, so uploaded documents are cleared whenever the service restarts or redeploys. The backend sleeps after about 15 minutes of inactivity, so the first request afterwards can take around a minute. There is no login, so everyone shares one knowledge base. Scanned or image-only PDFs are not supported because the app has no OCR.",
+  },
+  {
     slug: "findyourmovie",
     name: "FindYourMovie",
     short:
