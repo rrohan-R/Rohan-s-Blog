@@ -7,12 +7,12 @@ export const skillCategories = [
   {
     label: "Frameworks & Libraries",
     file: "Frameworks.xml",
-    items: ["Spring Framework", "Spring Boot", "React", "Vaadin", "JUnit", "JPA / Hibernate"],
+    items: ["Spring Boot", "React", "Vaadin", "JUnit", "JPA / Hibernate"],
   },
   {
     label: "AI & Agentic Systems",
     file: "Agentic.ai",
-    items: ["Generative AI", "LLMs", "Agentic AI", "LangChain", "LangGraph", "Google Gemini", "Claude Code"],
+    items: ["Generative AI", "LLMs", "Agentic AI", "LangChain", "LangGraph", "RAG", "Google Gemini", "Claude Code"],
   },
   {
     label: "Databases",

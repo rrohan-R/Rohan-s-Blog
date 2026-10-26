@@ -44,8 +44,8 @@ numbered lists, `**bold**`, `` `inline code` ``, and `[text](url)` links).
 
 ## Resume
 
-`public/Rohan_Ramesh_Resume.pdf` is served statically and linked from the
-navbar/footer "Resume" buttons and the About page.
+`public/Rohan-R_Resume.pdf` is served statically and linked from the footer's
+"Resume" link.
 
 ## Deploying
 

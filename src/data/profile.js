@@ -19,6 +19,6 @@ export const profile = {
     "PostgreSQL schema design and query optimization",
     "Containerized deployments",
     "Automated deployments with Vercel, Render",
-    "Agentic AI with LLMs, LangChain, LangGraph, RAG workflows",
+    "LLM applications with LangChain, LangGraph, and RAG workflows",
   ],
 };

@@ -154,7 +154,7 @@ export default function Home() {
             <div>
               <div className="eyebrow">Projects/</div>
               <h2>Featured work</h2>
-              <p>Real projects, built end to end — from schema design and LangChain agents to the deployed frontend.</p>
+              <p>Real projects, built end to end — from designs to real workflows.</p>
             </div>
             <Link to="/projects" className="btn btn-outline">
               View All Projects →
